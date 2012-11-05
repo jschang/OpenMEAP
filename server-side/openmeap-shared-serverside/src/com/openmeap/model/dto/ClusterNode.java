@@ -111,7 +111,7 @@ public class ClusterNode extends AbstractModelEntity implements HasJSONPropertie
 		this.id=id;
 	}
 	
-	@Column(name="svc_web_url_prfx",length=256,unique=true)
+	@Column(name="svc_web_url_prfx",length=256,unique=true,columnDefinition="VARCHAR(512)")
 	public String getServiceWebUrlPrefix() {
 		return serviceWebUrlPrefix;
 	}
